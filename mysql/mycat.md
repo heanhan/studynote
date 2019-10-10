@@ -27,7 +27,6 @@ mycat 的官网地址： http://www.mycat.io/ :
         13、分片规则丰富，插件化开发，易于扩展。
         14、强大的web，命令行监控。
 
-
 centos7安装下载mycat
 
         #下载：
