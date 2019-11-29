@@ -24,3 +24,40 @@ Nginx的初学
 
 ####  动静分离：
 	
+
+
+
+Nginx 安装：
+由于基本上都是在Linux上使用Nginx，因此介绍在Centos 7 下安装nginx
+    
+        1、首先下载Nginx
+        使用 wget http://nginx.org/download/nginx-1.17.0.tar.gz
+        
+            注：如果提示没有wget命令：-bash: wget: command not found
+            请使用：yum -y install wget
+        
+        2、然后解压下载的目录，进入解压目录中，在编译安装之前，需要安装两个依赖：
+        yum -y install pcre-devel
+        yum -y install openssl openssl-devel
+        
+        注：使用上面两个命令需要确保安全C++ 的包
+        没有请安装：yum -y install gcc gcc-c++ autoconf automake make
+        
+        3、然后开始编译安装
+        ./configure
+        make
+        make install
+        
+        4、安装好后的Nginx 的目录在I
+        /usr/local/nginx/sbin/nginx
+        
+        5、启动：
+        cd /usr/local/nginx/sbin
+        ./nginx
+        这样便可以启动
+        
+        然后浏览器中访问当前服务器的地址，便可以直接代理调转到Nginx页面。
+        
+
+
+
