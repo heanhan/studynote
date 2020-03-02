@@ -1,3 +1,6 @@
+---
+style: candy
+---
 # Getting Started
 
 ### mysql的知识点
