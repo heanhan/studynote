@@ -1,3 +1,5 @@
+- 
+
 - Mysql8.0  数据库安装
 
   ```
@@ -107,6 +109,9 @@
   ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
   
   # 退出，使用新密码登录
+  #配置 mysql 环境变量才能使用 mysql命令
+  export PATH=$PATH:/opt/mysql/bin
+  
   quit
   mysql -uroot -p
   
@@ -120,9 +125,9 @@
   # 退出
   quit
   ```
-
+  
   二、报错解决方案：
-
+  
   ```
   mysql连数据库的时候报错:
   
@@ -157,5 +162,5 @@
   
   ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
   ```
-
+  
   

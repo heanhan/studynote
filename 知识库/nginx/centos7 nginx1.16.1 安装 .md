@@ -35,6 +35,9 @@ mkdir -p /opt/nginx
 
 ```
 mkdir -p /var/temp/nginx 
+
+需要创建一个文件 在文件夹下 /var/run/nginx/
+touch nginx.pid 
 ```
 
 3、在nginx目录，输入如下命令进行配置，目的是为了创建Makefile文件
@@ -115,5 +118,20 @@ WantedBy=multi-user.target
 4.进入sbin文件夹：cd /usr/local/nginx/sbin/
 5.启动nginx：./nginx
 6.测试是否成功：打开浏览器，地址输入localhost,出现欢迎页面
+```
+
+```
+nginx 的启动、关闭、重启
+
+查看版本：./nginx -v
+
+启动： ./nginx 
+
+关闭：有两种方式（建议采用：./nginx -s quit）
+./nginx -s stop
+./nginx -s quit
+
+重新加载 nginx 
+./nginx -s reload
 ```
 
